@@ -1,7 +1,5 @@
-# Pgpool2.
-
 FROM ubuntu:14.04
-MAINTAINER Thomas Quintana <thomas@bettervoice.com>
+MAINTAINER Jonah Sullivan <jonah@thats.ninja>
 
 # Install Dependencies.
 RUN apt-get update && apt-get install -y libffi-dev libssl-dev pgpool2 python python-dev python-pip
