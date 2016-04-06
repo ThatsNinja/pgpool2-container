@@ -53,6 +53,6 @@ if __name__ == "__main__":
 	write(pgpool, '/etc/pgpool2/pgpool.conf')
 	# Start the container.
 	try:
-		run('pgpool', '-n', '-f', '/etc/pgpool2/pgpool.conf', '-F', '/etc/pgpool2/pcp.conf')
+		run('pgpool', '-ndD', '-f', '/etc/pgpool2/pgpool.conf', '-F', '/etc/pgpool2/pcp.conf')
 	except KeyboardInterrupt:
 		print 'Exiting...'
